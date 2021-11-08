@@ -4,6 +4,7 @@ City Locations
 
 City Locations is a Django app that can be installed in an existing Django project
 
+Documentation: https://django-cityloc-pkg.readthedocs.io/en/latest/
 
 Installation
 -----------
