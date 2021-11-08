@@ -21,4 +21,4 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
       run: |
         python setup.py sdist bdist_wheel
-        python -m twine upload -u ${{ secrets.TWINE_USERNAME }} -p ${{ secrets.TWINE_PASSWORD }} dist/*
+        - twine upload --verbose --repository-url https://test.pypi.org/legacy/ -u ${{ secrets.TWINE_USERNAME }} -p ${{ secrets.TWINE_PASSWORD }} dist/*
